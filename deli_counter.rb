@@ -1,8 +1,17 @@
 # Write your code here.
+katz_deli = []
+
 def line(katz_deli)
-  puts katz_deli = "The line is currently empty."
+  line_positions = []
+  if katz_deli.empty?
+    puts "The line is currently empty."
+  else
+    number = 1
+    katz_deli.each do |customer|
+      line positions << "#{number}. #{customer}"
+      number += 1
+    end
+    puts "The line is currently: #{line_positions.join(" ")}"
+  end
 end
 
-def line(other_deli)
-  puts other_deli = "The line is currently: 1. Logan 2. Avi 3. Spencer"
-end
